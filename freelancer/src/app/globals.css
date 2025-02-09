@@ -1,0 +1,85 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Light Mode Default */
+html.light {
+  background-color: rgb(249 250 251/1);
+  color: #333;
+}
+
+html.light body {
+  background-color: rgb(249 250 251/1); /* override for body in light mode */
+  color: #333;
+}
+
+html.dark {
+  background-color: rgb(15 23 42 / 1);
+  color: rgb(148 163 184 / 1);
+}
+
+html.dark body {
+  background-color: rgb(15 23 42 / 1); /* override for body in light mode */
+}
+
+/* Scrollbar */
+html {
+  scroll-behavior: smooth;
+
+  /* webkit browsers (Chrome, Safari, etc) */
+  ::-webkit-scrollbar-thumb {
+    background-color: #903030;
+    border-radius: 10px;
+    border: 3px solid #fff;
+  }
+
+  ::-webkit-scrollbar-track {
+    background-color: #f0f0f0;
+  }
+}
+
+/* For Firefox */
+html {
+  scrollbar-width: thin;
+  scroll-behavior: smooth;
+  scrollbar-color: #303030 transparent;
+}
+/* FONTS */
+
+html.dark .neon-text {
+  color: #00ff99; /* NEON GREEN */
+  text-shadow: 0 0 5px #00ff99, 0 0 10px #00ff99, 0 0 15px #00ff99,
+    0 0 20px #00ff99, 0 0 30px #00ff99, 0 0 40px #00ff99;
+}
+
+:root {
+  --background: rgb(249 250 251/1);
+  --foreground: #303030;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #303030;
+    --foreground: #ededed;
+  }
+}
+
+html {
+  color: var(--foreground);
+  background: var(--background);
+  /*font-family: Arial, Helvetica, sans-serif;*/
+}
+
+/* MAIN PAGE NAV */
+
+.active .nav-indicator {
+  width: 4rem;
+  background-color: rgb(226 232 240 / 1);
+}
+
+.active .nav-text {
+  width: 4rem;
+  color: rgb(226 232 240 / 1);
+}
+
+.transition-all {
+}
