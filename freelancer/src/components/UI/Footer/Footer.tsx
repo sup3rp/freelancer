@@ -1,10 +1,10 @@
 "use client";
 import React, { useState, useEffect } from "react";
-
+import Link from "next/link";
 import { PhoneIcon } from "@heroicons/react/20/solid";
 import { SunIcon, MoonIcon } from "@heroicons/react/20/solid";
 
-const setDarkMode = () => {
+/*const setDarkMode = () => {
   // ONLY USE localStorage IN USE EFFECT OR CLIENT SIDE ONLY
   if (localStorage) {
     const theme = localStorage?.getItem("theme");
@@ -16,10 +16,10 @@ const setDarkMode = () => {
     }
   }
   return true;
-};
+};*/
 
 export default function Footer() {
-  const savedTheme = "dark";
+  //const savedTheme = "dark";
   const [isDarkMode, setIsDarkMode] = useState(true);
 
   const toggleTheme = () => {
@@ -59,7 +59,7 @@ export default function Footer() {
 
   return (
     <footer className="row-start-1 flex gap-6 flex-wrap items-center justify-center pt-2 pb-2">
-      {/*<a
+      {/*<Link
         className="flex items-center gap-2 hover:underline hover:underline-offset-4"
         href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
         target="_blank"
@@ -73,25 +73,25 @@ export default function Footer() {
           height={16}
         />
         Learn
-  </a>*/}
-      <a
+  </Link>*/}
+      <Link
         className="flex items-center gap-2 hover:underline hover:underline-offset-4"
         href="https://pt.linkedin.com/in/pmsmiranda"
         target="_blank"
         rel="noopener noreferrer"
       >
         LinkedIn
-      </a>
+      </Link>
 
-      <a
+      <Link
         className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-8 sm:h-10 px-4 sm:px-5"
         href="/contact"
         rel="noopener noreferrer"
       >
         <PhoneIcon className="w-5 h-5 text-gray-800" />
         Contacto
-      </a>
-      {/*<a
+      </Link>
+      {/*<Link
         className="flex items-center gap-2 no-underline"
         href="/"
         target="_blank"
@@ -102,7 +102,7 @@ export default function Footer() {
         >
           Pedro Miranda
         </h1>
-      </a>
+      </Link>
       */}
       <div className="flex gap-6 flex-wrap items-center justify-center pb-1">
         <button
@@ -116,14 +116,14 @@ export default function Footer() {
           )}
         </button>
       </div>
-      {/*<a
+      {/*<Link
         className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
         href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
         target="_blank"
         rel="noopener noreferrer"
       >
         Read our docs
-  </a>*/}
+  </Link>*/}
     </footer>
   );
 }

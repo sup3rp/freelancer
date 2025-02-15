@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
+import Link from "next/link";
 //import ContactForm from "@/components/Contact/ContactForm";
 import Image from "next/image";
 import TEMPLATE_IMAGES from "../../templates";
@@ -41,7 +42,7 @@ export default function ContactPage() {
           <ul>
             {categories.map((category, index) => (
               <li key={`li-${category}`}>
-                <a
+                <Link
                   href={`#${category}`}
                   onClick={() => {
                     setActiveSideMenuOption(`${category}`);
@@ -54,7 +55,7 @@ export default function ContactPage() {
                   <span className="nav-text text-xs font-bold uppercase tracking-widest text-slate-500 group-hover:text-slate-200 group-focus-visible:text-slate-200">
                     {category}
                   </span>
-                </a>
+                </Link>
               </li>
             ))}
           </ul>

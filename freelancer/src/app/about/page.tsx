@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import Image from "next/image";
+import Link from "next/link";
 
 export default function AboutPage() {
   const [activeSideMenuOption, setActiveSideMenuOption] = useState("about");
@@ -26,7 +26,7 @@ export default function AboutPage() {
           <div className="mt-16">
             <ul>
               <li>
-                <a
+                <Link
                   href="#about"
                   onClick={() => {
                     setActiveSideMenuOption("about");
@@ -39,10 +39,10 @@ export default function AboutPage() {
                   <span className="nav-text text-xs font-bold uppercase tracking-widest text-slate-500 group-hover:text-slate-200 group-focus-visible:text-slate-200">
                     Sobre
                   </span>
-                </a>
+                </Link>
               </li>
               {/* <li>
-                <a
+                <Link
                   href="#experience"
                   onClick={() => {
                     setActiveSideMenuOption("experience");
@@ -55,10 +55,10 @@ export default function AboutPage() {
                   <span className="nav-text text-xs font-bold uppercase tracking-widest text-slate-500 group-hover:text-slate-200 group-focus-visible:text-slate-200">
                     Experiência
                   </span>
-                </a>
+                </Link>
               </li> */}
               <li>
-                <a
+                <Link
                   href="#portfolio"
                   onClick={() => {
                     setActiveSideMenuOption("experience");
@@ -71,10 +71,10 @@ export default function AboutPage() {
                   <span className="nav-text text-xs font-bold uppercase tracking-widest text-slate-500 group-hover:text-slate-200 group-focus-visible:text-slate-200">
                     Portfólio
                   </span>
-                </a>
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   href="#education"
                   onClick={() => {
                     setActiveSideMenuOption("education");
@@ -87,10 +87,10 @@ export default function AboutPage() {
                   <span className="nav-text text-xs font-bold uppercase tracking-widest text-slate-500 group-hover:text-slate-200 group-focus-visible:text-slate-200">
                     Educação
                   </span>
-                </a>
+                </Link>
               </li>
               {/*<li>
-                <a
+                <Link
                   href="#projects"
                   onClick={() => {
                     setActiveSideMenuOption("projects");
@@ -103,7 +103,7 @@ export default function AboutPage() {
                   <span className="nav-text text-xs font-bold uppercase tracking-widest text-slate-500 group-hover:text-slate-200 group-focus-visible:text-slate-200">
                     Projectos
                   </span>
-                </a>
+                </Link>
                 </li>*/}
             </ul>
           </div>
@@ -151,7 +151,7 @@ export default function AboutPage() {
                     <div className="z-10 sm:col-span-6">
                       <h3 className="font-medium leading-snug text-slate-200">
                         <div>
-                          <a
+                          <Link
                             className="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300  group/link text-base"
                             href="https://www.revealmedia.com"
                             target="_blank"
@@ -178,7 +178,7 @@ export default function AboutPage() {
                                 </svg>
                               </span>
                             </span>
-                          </a>
+                          </Link>
                         </div>
                       </h3>
                       <p className="mt-2 text-sm leading-normal">
@@ -242,7 +242,7 @@ export default function AboutPage() {
                     <div className="z-10 sm:col-span-6">
                       <h3 className="font-medium leading-snug text-slate-200">
                         <div>
-                          <a
+                          <Link
                             className="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300  group/link text-base"
                             href="https://primeit.pt"
                             target="_blank"
@@ -269,7 +269,7 @@ export default function AboutPage() {
                                 </svg>
                               </span>
                             </span>
-                          </a>
+                          </Link>
                         </div>
                       </h3>
                       <p className="mt-2 text-sm leading-normal">
@@ -328,7 +328,7 @@ export default function AboutPage() {
                     <div className="z-10 sm:col-span-6">
                       <h3 className="font-medium leading-snug text-slate-200">
                         <div>
-                          <a
+                          <Link
                             className="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300  group/link text-base"
                             href="https://www.atlantico.eu/"
                             target="_blank"
@@ -356,7 +356,7 @@ export default function AboutPage() {
                                 </svg>
                               </span>
                             </span>
-                          </a>
+                          </Link>
                         </div>
                       </h3>
                       <p className="mt-2 text-sm leading-normal">
@@ -402,7 +402,7 @@ export default function AboutPage() {
                     <div className="z-10 sm:col-span-6">
                       <h3 className="font-medium leading-snug text-slate-200">
                         <div>
-                          <a
+                          <Link
                             className="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300  group/link text-base"
                             href="https://www.xpand-it.com/"
                             target="_blank"
@@ -430,7 +430,7 @@ export default function AboutPage() {
                                 </svg>
                               </span>
                             </span>
-                          </a>
+                          </Link>
                         </div>
                       </h3>
                       <p className="mt-2 text-sm leading-normal">
@@ -487,7 +487,7 @@ export default function AboutPage() {
                     <div className="z-10 sm:col-span-6">
                       <h3 className="font-medium leading-snug text-slate-200">
                         <div>
-                          <a
+                          <Link
                             className="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300  group/link text-base"
                             href="https://www.revealmedia.com"
                             target="_blank"
@@ -514,7 +514,7 @@ export default function AboutPage() {
                                 </svg>
                               </span>
                             </span>
-                          </a>
+                          </Link>
                         </div>
                       </h3>
                       <p className="mt-2 text-sm leading-normal">
@@ -578,7 +578,7 @@ export default function AboutPage() {
                     <div className="z-10 sm:col-span-6">
                       <h3 className="font-medium leading-snug text-slate-200">
                         <div>
-                          <a
+                          <Link
                             className="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300  group/link text-base"
                             href="/"
                             target="_blank"
@@ -604,7 +604,7 @@ export default function AboutPage() {
                                 </svg>
                               </span>
                             </span>
-                          </a>
+                          </Link>
                         </div>
                       </h3>
                       <p className="mt-2 text-sm leading-normal">
@@ -659,7 +659,7 @@ export default function AboutPage() {
                     <div className="z-10 sm:col-span-6">
                       <h3 className="font-medium leading-snug text-slate-200">
                         <div>
-                          <a
+                          <Link
                             className="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300  group/link text-base"
                             href="https://www.fct.unl.pt"
                             target="_blank"
@@ -686,7 +686,7 @@ export default function AboutPage() {
                                 </svg>
                               </span>
                             </span>
-                          </a>
+                          </Link>
                         </div>
                       </h3>
                       <p className="mt-2 text-sm leading-normal">
@@ -710,7 +710,7 @@ export default function AboutPage() {
                     <div className="z-10 sm:col-span-6">
                       <h3 className="font-medium leading-snug text-slate-200">
                         <div>
-                          <a
+                          <Link
                             className="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300  group/link text-base"
                             href="https://www.fct.unl.pt"
                             target="_blank"
@@ -737,7 +737,7 @@ export default function AboutPage() {
                                 </svg>
                               </span>
                             </span>
-                          </a>
+                          </Link>
                         </div>
                       </h3>
                       <p className="mt-2 text-sm leading-normal">

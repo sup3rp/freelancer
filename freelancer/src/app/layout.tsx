@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import { Play } from "next/font/google";
 import Footer from "@/components/UI/Footer/Footer";
 import Header from "@/components/UI/Header/Header";

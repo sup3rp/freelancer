@@ -1,12 +1,8 @@
 "use client";
-import React, { useState } from "react";
+import React from "react";
+import Link from "next/link";
 import Image from "next/image";
-import {
-  ChevronRightIcon,
-  LightBulbIcon,
-  CheckBadgeIcon,
-} from "@heroicons/react/20/solid";
-import { PhoneIcon } from "@heroicons/react/20/solid";
+import { ChevronRightIcon, CheckBadgeIcon } from "@heroicons/react/20/solid";
 import Carousel from "@/components/UI/Carousel";
 
 export default function Home() {
@@ -57,14 +53,14 @@ export default function Home() {
           </ul>
 
           {/* CTA (Call to Action) */}
-          <a
+          <Link
             className="mt-5 bg-red-600 text-white font-bold rounded-lg border border-solid border-transparent transition-colors flex items-center justify-center text-background gap-2 hover:bg-red-700 text-lg sm:text-base px-3 py-4  lg:w-[360px] m-auto"
             href="/contact"
             rel="noopener noreferrer"
           >
             <CheckBadgeIcon className="h-6 w-6" />
             SOLICITAR ORÇAMENTO
-          </a>
+          </Link>
           {/* <button className="mt-6 flex items-center bg-blue-600 text-white px-6 py-3 rounded-lg text-lg font-semibold hover:bg-blue-700 transition w-[360px] m-auto">
             <LightBulbIcon className="h-6 w-6 text-yellow-300" />
             Peça já o seu orçamento gratuito!
