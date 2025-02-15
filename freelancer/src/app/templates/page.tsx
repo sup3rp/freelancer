@@ -17,17 +17,9 @@ const categories = [
 ];
 
 export default function ContactPage() {
-  const [margins, setMargins] = useState([""]);
   const [activeSideMenuOption, setActiveSideMenuOption] = useState(
     categories[0]
   );
-
-  useEffect(() => {
-    // Generate random margins for each image
-    setMargins(
-      TEMPLATE_IMAGES.map(() => (Math.random() > 0.5 ? "mt-1" : "mt-4"))
-    );
-  }, []);
 
   return (
     <section className="p-2">
