@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import Link from "next/link";
 //import ContactForm from "@/components/Contact/ContactForm";
 import Image from "next/image";
@@ -32,7 +32,7 @@ export default function ContactPage() {
         </p>
         <div className="mt-3">
           <ul>
-            {categories.map((category, index) => (
+            {categories.map((category) => (
               <li key={`li-${category}`}>
                 <Link
                   href={`#${category}`}
