@@ -109,22 +109,22 @@ const ContactForm = () => {
           className="w-full p-[8px] border-box rounded-xl text-black"
         >
           <option value="">---Seleccione um serviço---</option>
-          <option value="fullstack">Fullstack dev</option>
-          <option value="staticsites">Criação de sites institucionais</option>
-          <option value="store">Criação de lojas online</option>
-          <option value="blog">Criação de blogs</option>
+          <option value="staticsites">Sites</option>
+          <option value="store">Lojas</option>
+          <option value="blog">Blogs</option>
+          <option value="fullstack">Outro</option>
         </select>
       </div>
       <div className="mb-[14px]">
         <label htmlFor="message" className="block mb-[8px] rounded-xl">
           Mensagem:
         </label>
-        <input
-          type="text"
+        <textarea
           id="message"
           name="message"
           value={formData.message}
           onChange={handleChange}
+          rows={4}
           required
           className="w-full p-[8px] border-box rounded-xl text-black"
         />

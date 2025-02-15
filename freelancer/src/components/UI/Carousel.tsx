@@ -52,6 +52,7 @@ export default function Carousel() {
           layout="fill"
           objectFit="cover"
           className="rounded-lg"
+          onClick={nextSlide}
         />
         {/* Text Overlay */}
         <div className="absolute bottom-8 left-10 text-white text-2xl font-semibold bg-black bg-opacity-50 p-4 rounded-md">
